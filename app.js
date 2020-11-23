@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res, next) => {
-    res.sendFile(__dirname + "/form.html");
+    res.sendFile(__dirname + "/index.html");
   });
 
 app.post('/quiz', (req, res, next) => {
